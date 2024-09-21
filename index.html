@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeCode Project</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TypeCode Todos</h1>
+      <div class="description">
+        <h4>A Todo Application</h4>
+        <ul>
+          <li>Enter a todo in the input field and click the add button</li>
+          <li>Click on the todo to mark it as completed</li>
+          <li>Click on the corss icon to delete the todo</li>
+          <li>Use the search bar to filter todos</li>
+          <li>Click on the clear button to clear all completed todos</li>
+          <li>Click on the all button to show all todos</li>
+          <li>Click on the active button to show active todos</li>
+          <li>
+            To persist the data here the browser local Stroage has been used
+          </li>
+          <li>This has been develop using the ES6 vanilla JS</li>
+        </ul>
+      </div>
+      <div class="formSection">
+        <form>
+          <input type="text" name="todo" id="todo" placeholder="Add Todo ..." />
+          <button id="sub-btn" type="submit">Add</button>
+        </form>
+      </div>
+      <div class="searchForm">
+        <input
+          type="text"
+          name="todoSearch"
+          id="todoSearch"
+          placeholder="search todos ..."
+        />
+      </div>
+      <button class="clear-all">Clear All Todos ...</button>
+      <div class="todoSection"></div>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
